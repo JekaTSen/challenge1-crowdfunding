@@ -1,0 +1,87 @@
+{
+  "address": "0xc8f3b230db6cb658d74c32ad96f3222e177d0493",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "complete",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "completed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "contractName": "FundingRecipient",
+  "sourceName": "contracts/FundingRecipient.sol",
+  "bytecode": "0x6080604052348015600e575f80fd5b50609b8061001b5f395ff3fe6080604052600436106025575f3560e01c8063522e11771460295780639d9a7fe914603b575b5f80fd5b60395f805460ff19166001179055565b005b3480156045575f80fd5b505f5460519060ff1681565b604051901515815260200160405180910390f3fea2646970667358221220a99fb93fd0a0bf0c869a4299c398c898579bdef064e2af161ab0f84ca9430dbf64736f6c63430008140033",
+  "deployedBytecode": "0x6080604052600436106025575f3560e01c8063522e11771460295780639d9a7fe914603b575b5f80fd5b60395f805460ff19166001179055565b005b3480156045575f80fd5b505f5460519060ff1681565b604051901515815260200160405180910390f3fea2646970667358221220a99fb93fd0a0bf0c869a4299c398c898579bdef064e2af161ab0f84ca9430dbf64736f6c63430008140033",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "immutableReferences": {},
+  "inputSourceName": "project/contracts/FundingRecipient.sol",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "evm": {
+    "gasEstimates": {
+      "creation": {
+        "codeDepositCost": "31000",
+        "executionCost": "79",
+        "totalCost": "31079"
+      },
+      "external": {
+        "complete()": "24308",
+        "completed()": "2296"
+      }
+    }
+  },
+  "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"complete\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"completed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project/contracts/FundingRecipient.sol\":\"FundingRecipient\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\"project/:hardhat/=npm/hardhat@3.20.0/\"]},\"sources\":{\"project/contracts/FundingRecipient.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.8.20; // Do not change the solidity version as it negatively impacts submission grading\\n\\ncontract FundingRecipient {\\n    bool public completed;\\n\\n    function complete() public payable {\\n        completed = true;\\n    }\\n}\\n\",\"keccak256\":\"0x093e9f4390e6f225b75cb2775607526dbf062751fca91949ee80de147707f219\",\"license\":\"MIT\"}},\"version\":1}",
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 8141,
+        "contract": "project/contracts/FundingRecipient.sol:FundingRecipient",
+        "label": "completed",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_bool"
+      }
+    ],
+    "types": {
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      }
+    }
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "argsData": "0x",
+  "transaction": {
+    "hash": "0xf85ab2534bfba1909b7b7403366a607ebb902bb7a3dde742177618ef93c0a0bf",
+    "nonce": "0x9",
+    "origin": "0xdd4e586956251c341868fdb94eef9e5d29dd8279"
+  },
+  "receipt": {
+    "blockHash": "0x88b851ca1d261f925def14c162aa918b06208c85990ca5d18c342c42c89ed2d8",
+    "blockNumber": "0xb76487",
+    "transactionIndex": "0x5c"
+  }
+}

@@ -128,13 +128,13 @@ export const ContributeContractInteraction = ({ address }: { address?: string })
             className="btn btn-primary uppercase"
             onClick={async () => {
               try {
-                await writeContractAsync({ functionName: "contribute", value: parseEther("0.5") });
+                await writeContractAsync({ functionName: "contribute", value: parseEther("0.005") });
               } catch (err) {
                 console.error("Error calling contribute function", err);
               }
             }}
           >
-            🤝 Contribute 0.5 ether!
+            🤝 Contribute 0.005 ether!
           </button>
         </div>
       </div>
